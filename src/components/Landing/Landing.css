@@ -1,0 +1,83 @@
+/* Mobile Phone Portrait */
+.Landing {
+    height: 100vh;
+    box-shadow: 0 -5px 10px -5px;
+}
+
+.description {
+    margin: 4vh;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.tourButton {
+    display: block;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+
+.registerButton {
+    display: block;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+
+.landingButton:link,
+.landingButton:visited,
+.landingButton:hover,
+.landingButton:active {
+    color: black;
+} 
+
+.version {
+    font-size: 2vh;
+    bottom: 0;
+    position: absolute;
+}
+
+/* iPhone X 375x812 Portrait */
+@media only screen and (min-width: 375px) and (min-height: 812px) {
+    .description {
+        margin-top: 8vh;
+        text-align: center;
+    }
+}
+
+/* iPad 768x1024 Portrait */
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+    .description {
+        font-size: 8vw;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .description {
+        font-size: 8vh;
+    }
+
+    .tourButton {
+        width: 30vw;
+    }
+
+    .registerButton {
+        width: 45vw;
+    }
+
+    .tourButton:hover, 
+    .registerButton:hover {
+        cursor: pointer;
+    }
+
+    .tourButton:active {
+        width: 28vw;
+    }
+
+    .registerButton:active {
+        width: 43vw;
+    }
+}

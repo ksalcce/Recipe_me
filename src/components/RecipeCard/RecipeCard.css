@@ -1,0 +1,192 @@
+mark {
+    background-color: #F0EAD6;
+}
+
+.RecipeCard {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-radius: 15px;
+}
+
+.RecipeCard_title {
+    border-bottom: 1px solid black;
+    font-weight: bolder;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.5vh;
+}
+
+.RecipeCard_description  {
+    font-size: 2vh;
+    margin: 1vh;
+}
+
+.RecipeCard_full {
+    position: absolute;
+    height: 75vh;
+    width: 90vw;
+    left: 0;
+    top: 10vh;
+    z-index: 1;
+    background-image: url('../../assets/notecard.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 3vh;
+    padding: 2vh;
+    padding-right: 3vh;
+    padding-bottom: 3vh;
+    display: grid;
+    grid-template-rows: min-content 10% 5% 20% 6%;
+}
+
+.title_container {
+    font-weight: bolder;
+}
+
+.RecipeCard_full_title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.RecipeCard_full .closePopup {
+    background-color: red;
+    color: #F0EAD6;
+    border-radius: 50%;
+    font-size: 3vh;
+    position: absolute;
+    left: 3vw;
+    top: 2vh;
+    box-shadow: -3px 0px 3px black;
+}
+
+.Recipe_times {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prep_time, .cook_time {
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: .75vh;
+}
+
+.prep_time {
+    background-color: #f1c40f;
+}
+
+.cook_time {
+    background-color: #16a085;
+}
+
+.Recipe_ingredients_label {
+    border-bottom: 2px solid black;
+}
+
+.Recipe_ingredients {
+    max-height: 95%;
+    width: 90%;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    border: 1px solid black;
+    padding: 1vh;
+    background-color: #F0EAD6;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.Recipe_ingredients::-webkit-scrollbar,
+.Recipe_instructions::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.Recipe_ingredients::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.Recipe_ingredients::-webkit-scrollbar:horizontal {
+    width: 11px;
+}
+
+.Recipe_ingredients::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.Recipe_ingredients li {
+    display: inline-block;
+    width: 47%;
+    margin: .2vh;
+    margin-right: 1vw;
+    border-bottom: .5px solid black;
+}
+
+.Recipe_instructions_label {
+    border-bottom: 2px solid black;
+    margin-top: 1vh;
+}
+
+.Recipe_instructions {
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 2vh;
+    overflow: auto;
+}
+
+/* iPad 768x1024 Portrait */
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+    .RecipeCard_full .closePopup {
+        width: 4vw;
+    }
+
+    .RecipeCard_full_title {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .RecipeCard:hover,
+    .RecipeCard_title:hover,
+    .RecipeCard_description:hover {
+        cursor: pointer;
+    }
+
+    .RecipeCard_full {
+        width: 50vw;
+        left: 25vw;
+    }
+
+    .Recipe_instructions {
+        margin-right: 3vh;
+    }
+
+    .RecipeCard_full .closePopup {
+        left: 1.2vw;
+    }
+
+    .RecipeCard_full .closePopup:active {
+        box-shadow: none;
+        left: 1vw;
+    }
+}

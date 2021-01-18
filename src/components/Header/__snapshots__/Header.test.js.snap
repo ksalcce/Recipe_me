@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders UI correctly 1`] = `
+<header
+  className="Header"
+>
+  <img
+    alt="Pantry Buddy logo"
+    className="logo"
+    onClick={[Function]}
+    src="pantry.png"
+  />
+  <a
+    className="log_out"
+    href="/"
+    onClick={[Function]}
+  >
+    logout
+  </a>
+</header>
+`;

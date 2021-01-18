@@ -1,0 +1,88 @@
+/* Mobile Phone Portrait */
+.Register_main {
+    box-shadow: 0 -5px 10px -5px;
+}
+
+.Register_title {
+    margin: 4vh;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.Register {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px;
+    width: 75vw;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: #F0EAD6;
+}
+
+.Register label {
+    font-size: 3vh;
+}
+
+.Register input {
+    font-size: 3vh;
+    width: 90%;
+}
+
+#Register_error {
+    margin-bottom: -2vh;
+    font-size: 2vh;
+    color: red;
+}
+
+.Register button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 55vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    text-decoration: none;
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+/* iPad 768x1024 Landscape */
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+    .Register_title {
+        text-align: center;
+        margin-top: 10vh;
+    }
+
+    .Register {
+        width: 45vw;
+    }
+
+    .Register button {
+        width: 55%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1366px) {
+    .Register_title {
+        text-align: center;
+        margin-top: 10vh;
+    }
+
+    .Register {
+        width: 30vw;
+        padding: 5vh;
+        padding-top: 3vh;
+    }
+
+    .Register button {
+        width: 55%;
+    }
+}
