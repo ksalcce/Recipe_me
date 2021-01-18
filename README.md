@@ -6,9 +6,6 @@
 
 > Sometimes I've just wanted to know what I could cook with what I have on hand. I couldn't find a good site that met this need, so I decided to try my hand at it.
 
-## Build Status
-
-![Build Status](https://travis-ci.org/thinkful-c11/book-thing.io.svg?branch=master)
 
 ## Screen Shots
 
@@ -51,7 +48,5 @@ Recipe Card:
 
 ## Backend:
 
-- [Repo](https://github.com/omegacoo/recipe_me_server)
+- [Repo](https://github.com/ksalcce/Recipe_me-server)
 
-## Author:
-* **Ben Sumser**
